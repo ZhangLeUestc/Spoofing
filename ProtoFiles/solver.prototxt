@@ -1,0 +1,23 @@
+
+net: "ProtoFiles/train_val.prototxt"
+
+
+test_iter:9123
+test_interval: 500
+test_initialization: true
+
+
+base_lr: 1e-7
+lr_policy: "step"
+stepsize: 20000
+iter_size:1
+average_loss: 20
+display: 20
+max_iter: 60000
+#momentum: 0.90
+type:"RMSProp"
+weight_decay: 0.0005
+snapshot: 500
+snapshot_prefix: "Snapshots/ours"
+solver_mode:GPU
+device_id:0
